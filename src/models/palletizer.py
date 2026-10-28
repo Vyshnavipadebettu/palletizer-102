@@ -290,7 +290,7 @@ class Palletizer(Generic, EasyResource):  # noqa: F405  (Generic comes from the 
         self.placed.append((x, y, z_box))
         return seq
 
-        async def pack(self):
+    async def pack(self):
         """Pack the whole pallet, answer with the count."""
         await self.clear_boxes()
         self.placed = []
