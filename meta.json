@@ -1,0 +1,28 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "zippycoraldroid:palletizer-102",
+  "models": [
+    {
+      "api": "rdk:service:generic",
+      "model": "zippycoraldroid:palletizer-102:palletizer",
+      "markdown_link": "zippycoraldroid_palletizer-102_palletizer.md"
+    }
+  ],
+  "visibility": "private",
+  "url": "",
+  "description": "Autonomous palletizing service for a simulated robotic workcell.",
+  "applications": null,
+  "markdown_link": "README.md",
+  "entrypoint": "dist/main",
+  "first_run": "",
+  "build": {
+    "build": "./build.sh",
+    "setup": "./setup.sh",
+    "path": "dist/archive.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64",
+      "darwin/arm64"
+    ]
+  }
+}
